@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Template</title>
+		<title>DOM change color</title>
 	</head>
 <body>
     <p id="para">Some text here</p>
@@ -9,12 +9,11 @@
     <button onclick="changeColor('red');">red</button>
 
     <script type="text/javascript">
-  
 
-  function changeColor(newColor) {
-  var elem = document.getElementById('para');
-  elem.style.color = newColor;
-}
+    function changeColor(newColor) {
+        var elem = document.getElementById('para');
+        elem.style.color = newColor;
+    }
     
     </script>
 </body>
