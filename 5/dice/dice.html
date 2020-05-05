@@ -19,7 +19,6 @@
 	// exiting img tag with the id "dice"
 	function throwDice() {                        
 		var nr = getRandomNumber();
-
 		document.getElementById("dice").src = nr + ".png";
 	}
 
@@ -29,6 +28,20 @@
 		var max = 6; 
 
 		return Math.round((Math.random() * (max - min)) + min); 
+	}
+
+
+	function main() {
+
+		var options = getOptions();
+
+		var inputUser = getInput();
+
+		var resultTransform = transform(options, inputUser);
+
+		var resultFormat = formatText(resultTransform);
+
+		displayText(resultFormat);
 	}
 
 	</script>
